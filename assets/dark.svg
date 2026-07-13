@@ -457,47 +457,31 @@
         <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.8s" fill="freeze"/>
       </text>
 
-      <!-- Rotating roles: single shared cycle so only one role is visible at a time -->
+      <!-- Rotating roles: discrete SMIL slots — only one visible at a time -->
       <g transform="translate(500,178)">
         
-        
-        
-        
-        
-        
-        <text y="0" fill="url(#accentGrad)" font-family="ui-sans-serif,system-ui,sans-serif" font-size="18" font-weight="500" opacity="0">
+        <text y="0" fill="url(#accentGrad)" font-family="ui-sans-serif,system-ui,sans-serif" font-size="18" font-weight="500" visibility="hidden" opacity="0">
           Solana Builder
-          <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0;0.012;0.238;0.25;1" dur="16s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="1;0;0;0;0" keyTimes="0;0.25;0.5;0.75;1" dur="16s" repeatCount="indefinite" calcMode="discrete"/>
+          <animate attributeName="visibility" values="visible;hidden;hidden;hidden;hidden" keyTimes="0;0.25;0.5;0.75;1" dur="16s" repeatCount="indefinite" calcMode="discrete"/>
         </text>
         
-        
-        
-        
-        
-        
-        <text y="0" fill="url(#accentGrad)" font-family="ui-sans-serif,system-ui,sans-serif" font-size="18" font-weight="500" opacity="0">
+        <text y="0" fill="url(#accentGrad)" font-family="ui-sans-serif,system-ui,sans-serif" font-size="18" font-weight="500" visibility="hidden" opacity="0">
           AI-First Developer
-          <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.25;0.262;0.488;0.5;1" dur="16s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;1;0;0;0" keyTimes="0;0.25;0.5;0.75;1" dur="16s" repeatCount="indefinite" calcMode="discrete"/>
+          <animate attributeName="visibility" values="hidden;visible;hidden;hidden;hidden" keyTimes="0;0.25;0.5;0.75;1" dur="16s" repeatCount="indefinite" calcMode="discrete"/>
         </text>
         
-        
-        
-        
-        
-        
-        <text y="0" fill="url(#accentGrad)" font-family="ui-sans-serif,system-ui,sans-serif" font-size="18" font-weight="500" opacity="0">
+        <text y="0" fill="url(#accentGrad)" font-family="ui-sans-serif,system-ui,sans-serif" font-size="18" font-weight="500" visibility="hidden" opacity="0">
           Trading Bot Engineer
-          <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5;0.512;0.738;0.75;1" dur="16s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.25;0.5;0.75;1" dur="16s" repeatCount="indefinite" calcMode="discrete"/>
+          <animate attributeName="visibility" values="hidden;hidden;visible;hidden;hidden" keyTimes="0;0.25;0.5;0.75;1" dur="16s" repeatCount="indefinite" calcMode="discrete"/>
         </text>
         
-        
-        
-        
-        
-        
-        <text y="0" fill="url(#accentGrad)" font-family="ui-sans-serif,system-ui,sans-serif" font-size="18" font-weight="500" opacity="0">
+        <text y="0" fill="url(#accentGrad)" font-family="ui-sans-serif,system-ui,sans-serif" font-size="18" font-weight="500" visibility="hidden" opacity="0">
           Web3 Automation Builder
-          <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.75;0.762;0.988;1.0;1" dur="16s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;0;1;0" keyTimes="0;0.25;0.5;0.75;1" dur="16s" repeatCount="indefinite" calcMode="discrete"/>
+          <animate attributeName="visibility" values="hidden;hidden;hidden;visible;hidden" keyTimes="0;0.25;0.5;0.75;1" dur="16s" repeatCount="indefinite" calcMode="discrete"/>
         </text>
         
         <text x="310" y="0" fill="#22D3EE" font-family="ui-monospace,monospace" font-size="18" opacity="1">

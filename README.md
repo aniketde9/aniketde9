@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/light.svg">
-  <img src="assets/dark.svg" width="1180" alt="Aniket De — Solana Builder and AI-First Developer">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/dark.svg?v=3">
+  <source media="(prefers-color-scheme: light)" srcset="assets/light.svg?v=3">
+  <img src="assets/dark.svg?v=3" width="1180" alt="Aniket De — Solana Builder and AI-First Developer">
 </picture>
 
 ---
