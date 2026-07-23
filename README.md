@@ -1,10 +1,8 @@
-<a href="https://www.linkedin.com/in/de-aniket/">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/dark.svg?v=4">
-    <source media="(prefers-color-scheme: light)" srcset="assets/light.svg?v=4">
-    <img src="assets/dark.svg?v=4" width="1180" alt="Aniket De — Solana Builder and AI-First Developer">
-  </picture>
-</a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/dark.svg?v=4">
+  <source media="(prefers-color-scheme: light)" srcset="assets/light.svg?v=4">
+  <img src="assets/dark.svg?v=4" width="1180" alt="Aniket De — Solana Builder and AI-First Developer">
+</picture>
 
 ---
 
