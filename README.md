@@ -6,6 +6,16 @@
 
 ---
 
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/aniketde9/aniketde9/master/dist/github-jet.svg"
+    alt="GitHub Jet Heatmap"
+    width="100%"
+  />
+</p>
+
+---
+
 **Solana builder** · **AI-first developer** · **Trading automation**
 
 [LinkedIn](https://www.linkedin.com/in/de-aniket/) · [GitHub](https://github.com/aniketde9) · [X @crypto_0l0n](https://x.com/crypto_0l0n)
