@@ -1,0 +1,47 @@
+name: Update reactor core (100 days)
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile
+        uses: actions/checkout@v4
+
+      - name: Checkout markdown-rbmk
+        uses: actions/checkout@v4
+        with:
+          repository: Seungpyo1007/markdown-rbmk
+          path: .rbmk
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install core deps
+        working-directory: .rbmk/packages/core
+        run: npm install --no-save @octokit/graphql@8 @octokit/rest@21
+
+      - name: Generate reactor SVGs (last 100 days)
+        env:
+          GH_USERNAME: ${{ github.repository_owner }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DAYS: "100"
+          PROFILE_ROOT: ${{ github.workspace }}
+          RBMK_CORE: ${{ github.workspace }}/.rbmk/packages/core
+          OUTPUT_DIR: dist
+        run: npx --yes tsx generate-reactor.mjs
+
+      - name: Commit and push if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update reactor core (100 days)"
+          file_pattern: dist/reactor-dark.svg dist/reactor-light.svg

@@ -18,9 +18,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://markdown-rbmk.vercel.app/api/badge?username=aniketde9&mode=commit&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://markdown-rbmk.vercel.app/api/badge?username=aniketde9&mode=commit&theme=light" />
-    <img alt="Commit intensity reactor core" src="https://markdown-rbmk.vercel.app/api/badge?username=aniketde9&mode=commit&theme=dark" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aniketde9/aniketde9/master/dist/reactor-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/aniketde9/aniketde9/master/dist/reactor-light.svg" />
+    <img alt="Commit intensity reactor core" src="https://raw.githubusercontent.com/aniketde9/aniketde9/master/dist/reactor-dark.svg" />
   </picture>
 </p>
 
