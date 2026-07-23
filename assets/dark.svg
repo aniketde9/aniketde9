@@ -497,7 +497,7 @@
           <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.6s" fill="freeze"/>
         </text>
         <text x="500" y="258" fill="#94A3B8" opacity="0">
-          <tspan fill="#22D3EE">&#x25B8;</tspan> Education: <tspan fill="#F8FAFC">Engineering (ESD)</tspan>
+          <tspan fill="#22D3EE">&#x25B8;</tspan> Education: <tspan fill="#F8FAFC">Masters in Engineering (B.Tech + M.Tech)</tspan>
           <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.9s" fill="freeze"/>
         </text>
         <text x="500" y="286" fill="#94A3B8" opacity="0">
